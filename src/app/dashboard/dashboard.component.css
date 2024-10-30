@@ -1,0 +1,85 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 50px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.menu li:hover {
+  background-color: #e0e0e0;
+  border-radius: 8px;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 20px 40px;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-initials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: 500;
+  color: #333;
+}

@@ -1,0 +1,73 @@
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter-btn.advanced-filter {
+  /* Advanced Filter
+
+  5 Variations, 2 themes
+  */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+
+  width: 149px;
+  height: 44px;
+
+  background: #FFFFFF;
+  border: 1px solid #626262;
+  border-radius: 8px;
+
+  color: #353535;
+
+
+}
+.filter-btn.clear-filter {
+  /* Clear Filter
+
+  5 Variations, 2 themes
+  */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+
+  width: 121px;
+  height: 44px;
+
+  background: #F5F5F5;
+  border-radius: 8px;
+
+
+  /* text */
+
+  color: #626262;
+
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+
+
+}
+
+.filter-btn:hover {
+  background-color: #d4d4d4;
+}
+
+

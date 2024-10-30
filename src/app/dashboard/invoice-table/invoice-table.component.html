@@ -1,0 +1,26 @@
+<table class="invoice-table">
+  <thead>
+  <tr>
+    <th><input type="checkbox" /></th>
+    <th>Invoice Seq.</th>
+    <th>Supplier</th>
+    <th>Invoice No.</th>
+    <th>Creation Date</th>
+    <th>Status</th>
+    <th>Actions</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let invoice of invoices; let i = index" [class.alternate]="i % 2 !== 0">
+    <td><input type="checkbox" /></td>
+    <td>{{ 'PZ' + invoice.seq }}</td>
+    <td>{{ invoice.supplier }}</td>
+    <td>{{ invoice.invoiceNo }}</td>
+    <td>{{ invoice.date | date: 'MM/dd/yyyy' }}</td>
+    <td>{{ invoice.status }}</td>
+    <td class="actions"><button class="icon-button">⋮</button></td>
+  </tr>
+  </tbody>
+</table>
+<p class="row-count"># Rows: {{ rowCount }}</p>
+

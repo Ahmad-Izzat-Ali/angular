@@ -1,0 +1,11 @@
+.options-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #555;
+}
+
+.options-btn:hover {
+  color: #333;
+}
